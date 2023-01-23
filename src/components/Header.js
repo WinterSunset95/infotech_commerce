@@ -28,7 +28,7 @@ const Header = () => {
 				{
 					user != null ? 
 					<div>
-						<img src={user.photoURL} />
+						<Image src={user.photoURL} width={40} height={40} className={`rounded-full`} />
 					</div>
 					:
 					<button className={`p-2 bg-blue-400 rounded-md text-white cursor-pointer`} onClick={() => signin()}>Sign In</button>
